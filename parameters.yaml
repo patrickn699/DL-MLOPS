@@ -1,0 +1,16 @@
+base:
+  project: Deep Learning using MlOPS
+
+
+data_source:
+  data_src: Data_Set
+
+load_data:
+  num_classes: 3
+  raw_data: Data_Set
+  preprocessed_data: Data\preprocessed
+  full_p: \MlOPS-DeepLearning\Data_Set
+
+train_split:
+  split_ratio: 80
+  

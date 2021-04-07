@@ -1,7 +1,6 @@
 base:
   project: Deep Learning using MlOPS
 
-
 data_source:
   data_src: Data_Set
 
@@ -13,4 +12,30 @@ load_data:
 
 train_split:
   split_ratio: 80
+
+model:
+  name: ResNet50
+  trainable: True
+  train_path: Data\preprocessed\train
+  test_path: Data\preprocessed\test
+  image_size: [225,225]
+  loss: 'categorical_crossentropy'
+  optimizer: 'adam' 
+  metrics: ['accuracy']
+  epochs: 12
+  sav_dir : 'saved_models/trained.h5'
+
+
+img_augment:
+  rescale: 1./255,
+  shear_range: 0.2
+  zoom_range: 0.2
+  horizontal_flip: True
+  vertical_flip: True
+  batch_size: 18
+  class_mode: 'categorical'
+
+  
+
+
   

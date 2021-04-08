@@ -15,14 +15,14 @@ train_split:
 
 model:
   name: ResNet50
-  trainable: True
+  trainable: False
   train_path: Data\preprocessed\train
   test_path: Data\preprocessed\test
   image_size: [225,225]
   loss: 'categorical_crossentropy'
   optimizer: 'adam' 
   metrics: ['accuracy']
-  epochs: 5
+  epochs: 8
   sav_dir : 'saved_models/trained.h5'
 
 

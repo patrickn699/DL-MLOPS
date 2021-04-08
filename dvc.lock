@@ -29,19 +29,19 @@ stages:
       size: 4047
     outs:
     - path: Reports
-      md5: d827748bd645c657e1d3ef22b54b6297.dir
-      size: 59640
-      nfiles: 2
+      md5: b4c413501d9957d8c9b755b32585df35.dir
+      size: 52068
+      nfiles: 3
     - path: saved_models
-      md5: 5ff93ddf57cc51a6f2f8ce83e75f13f9.dir
+      md5: c6a513a9c9dbd19600e8ed8aff7bf4bf.dir
       size: 81091248
       nfiles: 1
   evaluate:
     cmd: python src/evaluate.py --config=parameters.yaml
     deps:
     - path: src/evaluate.py
-      md5: 7cdf76869d09af87e29ca692a7403174
-      size: 2000
+      md5: 37bd4185e5b4ed3bb919748dea001203
+      size: 1998
     - path: src/getdata.py
       md5: 460975c2e88866a396ee550cd7a502e9
       size: 538

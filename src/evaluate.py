@@ -29,10 +29,10 @@ def m_evaluate(config_file):
     
     Y_pred = model.predict_generator(test_set, len(test_set))
     y_pred = np.argmax(Y_pred, axis=1)
-    #print('Confusion Matrix')
+    print('Confusion Matrix')
    # print(sns.heatmap(confusion_matrix(test_set.classes, y_pred),annot = True))
    # plt.show()
-    #print('Classification Report')
+    print('Classification Report')
     target_names = ['Bulbasaur', 'Charmander', 'Squirtle']
     df = pd.DataFrame(classification_report(test_set.classes, y_pred, target_names=target_names, output_dict=True)).T
     df['support'] = df.support.apply(int)

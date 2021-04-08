@@ -1,0 +1,47 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/split.py --config=parameters.yaml
+    deps:
+    - path: Data_Set/
+      md5: b3066a6b54505df54997d54006323519.dir
+      size: 222964464
+      nfiles: 869
+    - path: src/getdata.py
+      md5: 460975c2e88866a396ee550cd7a502e9
+      size: 538
+    - path: src/split.py
+      md5: abbc261095401ee9682296fe5f82f7a6
+      size: 2745
+    outs:
+    - path: data/preprocessed
+      md5: 1980c3034f6d0b2bae2353c85dcdc6e6.dir
+      size: 222964116
+      nfiles: 865
+  train_model:
+    cmd: python src/model_train.py --config=parameters.yaml
+    deps:
+    - path: src/getdata.py
+      md5: 460975c2e88866a396ee550cd7a502e9
+      size: 538
+    - path: src/model_train.py
+      md5: 066f87f9d1fdd049a32c6eb7b68b7e03
+      size: 4047
+    outs:
+    - path: Reports
+      md5: d827748bd645c657e1d3ef22b54b6297.dir
+      size: 59640
+      nfiles: 2
+    - path: saved_models
+      md5: 5ff93ddf57cc51a6f2f8ce83e75f13f9.dir
+      size: 81091248
+      nfiles: 1
+  evaluate:
+    cmd: python src/evaluate.py --config=parameters.yaml
+    deps:
+    - path: src/evaluate.py
+      md5: 7cdf76869d09af87e29ca692a7403174
+      size: 2000
+    - path: src/getdata.py
+      md5: 460975c2e88866a396ee550cd7a502e9
+      size: 538

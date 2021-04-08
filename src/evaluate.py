@@ -25,12 +25,15 @@ def m_evaluate(config_file):
                                                 class_mode = class_mode
                                                 )
 
-    
-    
+    label_map = (test_set.class_indices)
+    print(label_map)
     Y_pred = model.predict_generator(test_set, len(test_set))
     y_pred = np.argmax(Y_pred, axis=1)
     print('Confusion Matrix')
-   # print(sns.heatmap(confusion_matrix(test_set.classes, y_pred),annot = True))
+    sns.heatmap(confusion_matrix(test_set.classes, y_pred ),annot = True)
+    plt.xlabel('Actual values, 0:Bulbasaur, 1:Charmander,2:Squirtle')
+    plt.ylabel('Predicted values, 0:Bulbasaur, 1:Charmander,2:Squirtle')
+    plt.savefig('Reports/Confusion Matrix')
    # plt.show()
     print('Classification Report')
     target_names = ['Bulbasaur', 'Charmander', 'Squirtle']

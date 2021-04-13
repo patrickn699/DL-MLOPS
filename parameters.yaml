@@ -15,7 +15,7 @@ train_split:
 
 model:
   name: ResNet50
-  trainable: False
+  trainable: True
   train_path: Data\preprocessed\train
   test_path: Data\preprocessed\test
   image_size: [225,225]

@@ -1,0 +1,85 @@
+<html>
+{% extends "base.html" %} {% block content %}
+<head>
+<link href="{{ url_for('static', filename='design2.css') }}" rel="stylesheet"> 
+<link href="{{ url_for('static', filename='design3.css') }}" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<div id=container>
+    Starter Pokemon Classification Using
+    <div id=flip>
+        <div><div>Deep Learning</div></div>
+        <div><div>CNN</div></div>
+        <div><div>Computer Vision</div></div>
+
+    </div>
+   
+    </div>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+      </div>
+
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict"><span>Predict!</span></button>
+        </div>
+    
+
+   <!-- <div class="loader" style="display:block;"></div>-->
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</form>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<section>
+<ul id="services">
+  
+  <li>
+    <div class="twitter">
+      <a href="https://twitter.com/PPatil699?s=09">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+    </div>
+    <span>Twitter</span>
+  </li>
+  <li>
+    <div class="linkedin">
+      <a href="https://www.linkedin.com/in/prathmesh-patil-b151051a3">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </div>
+    <span>LinkedIn</span>
+  </li>
+  <li>
+    <div class="github">
+      <a href="https://github.com/patrickn699/Facemask-Classification-2.0.git">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+    <span >Github</span>
+  </li>
+</ul>
+</section>
+
+</div>
+
+{% endblock %}
+</html>

@@ -1,0 +1,130 @@
+.img-preview {
+    width: 256px;
+    height: 266px;
+    position: relative;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;    
+    transform: translate(25%,-20%);
+    display: flex;
+    justify-content: center;
+}
+
+.img-preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: 256px 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+    
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+    position: relative;
+}
+
+.upload-label:hover{
+    background: #34495E;
+    color: #39D2B4;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    transform: translate(0%,0%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    
+}
+
+
+section #services {
+    text-align: center;
+    transform: translatez(0);
+    transform: translate(2%,340%);
+  }
+  section #services h2 {
+    margin: 80px 0px 40px;
+    color: #fff;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+   
+  }
+  section #services li {
+    width: 120px;
+    height: 100px;
+    display: inline-block;
+    margin: 25px;
+    list-style: none;
+  }
+  section #services li div {
+    width: 77px;
+    height: 77px;
+    color: #74d4b3;
+    font-size: 3.3em;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+    
+  }
+  section #services li a {
+    color: #77cc6d;
+  }
+  section #services li div:hover {
+    transform: rotate(360deg);
+    border-radius: 90px;
+  }
+  section #services li span {
+    width: 120px;
+    height: 20px;
+    display: block;
+    padding: 15px 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+    transform: translate(-16%,40%);
+  }
+  .credits a {
+    display: block;
+    text-align: center;
+    color: #74d4b3;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 50px;
+    background: white;
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  h3{
+      transform: translate(0%,150%);
+  }
+
+  .image-section
+  {
+    transform: translate(0%,20%);
+  }

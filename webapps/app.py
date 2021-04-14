@@ -5,7 +5,6 @@ from werkzeug.utils import secure_filename
 from keras.models import load_model
 #from keras.preprocessing.image import image
 import numpy as np
-import os
 from tensorflow.compat.v1 import ConfigProto
 from tensorflow.compat.v1 import InteractiveSession
 #from tensorflow.keras.preprocessing import image

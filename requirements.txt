@@ -1,7 +1,7 @@
 numpy
 opencv-python
 keras
-tensorflow-gpu==2.2.0
+tensorflow==2.2.0
 flask
 dvc
 scikit-learn

@@ -4,3 +4,4 @@ keras==2.3.0
 flask
 dvc
 scikit-learn
+gunicorn

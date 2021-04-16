@@ -1,7 +1,7 @@
 numpy
 opencv-python
-keras==2.3.0
+keras
 flask
 dvc
 scikit-learn
-gunicorn==19.9.0
+gunicorn

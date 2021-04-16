@@ -23,9 +23,9 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run: |
-        python -m pip3 install --upgrade pip
+        python -m pip install --upgrade pip
         pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip3 install --upgrade  -r requirements.txt; fi
+        if [ -f requirements.txt ]; then pip install --upgrade  -r requirements.txt; fi
 
     - name: Deploy to Heroku
       env:

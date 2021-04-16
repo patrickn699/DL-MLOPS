@@ -36,6 +36,7 @@ google-auth-oauthlib==0.4.3
 google-pasta==0.2.0
 grandalf==0.6
 grpcio==1.36.1
+gunicorn
 h5py==2.10.0
 idna==2.10
 ImageHash==4.1.0

@@ -4,4 +4,4 @@ keras
 flask
 dvc
 scikit-learn
-gunicorn
+gunicorn==19.9.0

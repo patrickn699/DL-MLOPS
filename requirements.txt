@@ -4,7 +4,7 @@ gunicorn
 Keras==2.3.0
 matplotlib==3.3.2
 numpy
-opencv-python==3.4.10.35
+opencv-python==3.4.10.37
 scikit-learn==0.24.1
 seaborn==0.11.0
 

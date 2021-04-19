@@ -1,9 +1,10 @@
-tensorflow==2.0.0
+tensorflow==2.2.0
 Flask==1.1.1
 gunicorn
 Keras==2.3.0
 numpy==1.18.1
 opencv-python==3.4.10.37
+Pillow==2.2.1
 
 
 

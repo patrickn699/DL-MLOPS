@@ -1,4 +1,4 @@
-tensorflow==2.2.0
+https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow_cpu-2.2.0-cp38-cp38-win_amd64.whl
 Flask==1.1.2
 gunicorn
 Keras==2.3.0

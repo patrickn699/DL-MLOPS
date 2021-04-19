@@ -1,4 +1,4 @@
-https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-2.2.0-cp37-cp37m-manylinux2010_x86_64.whl
+tensorflow==2.2.0
 Flask==1.1.2
 gunicorn
 Keras==2.3.0

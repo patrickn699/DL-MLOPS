@@ -2,10 +2,9 @@ tensorflow==2.0.0
 Flask==1.1.1
 gunicorn
 Keras==2.3.0
-matplotlib==3.3.2
-numpy
+numpy==1.18.1
 opencv-python==3.4.10.37
-seaborn==0.11.0
+
 
 
 

@@ -3,7 +3,7 @@ Flask==1.1.1
 gunicorn
 Keras==2.3.0
 numpy==1.18.1
-opencv-python==3.4.10.37
+opencv-python
 Pillow==2.2.0
 
 

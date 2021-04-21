@@ -14,7 +14,7 @@ train_split:
   split_ratio: 80
 
 model:
-  name: ResNet50
+  name: VGG19
   trainable: False
   train_path: Data\preprocessed\train
   test_path: Data\preprocessed\test

@@ -25,23 +25,23 @@ stages:
       md5: 460975c2e88866a396ee550cd7a502e9
       size: 538
     - path: src/model_train.py
-      md5: 066f87f9d1fdd049a32c6eb7b68b7e03
-      size: 4047
+      md5: 7a951ce77425cefa03b5040a51b33378
+      size: 3999
     outs:
     - path: Reports
-      md5: b4c413501d9957d8c9b755b32585df35.dir
-      size: 52068
-      nfiles: 3
+      md5: 0dd83a423dc82b8d21672a0747057f67.dir
+      size: 84593
+      nfiles: 4
     - path: saved_models
-      md5: c6a513a9c9dbd19600e8ed8aff7bf4bf.dir
-      size: 81091248
+      md5: a68e33971c4ea1ef2aebc07e27da08ee.dir
+      size: 81081984
       nfiles: 1
   evaluate:
     cmd: python src/evaluate.py --config=parameters.yaml
     deps:
     - path: src/evaluate.py
-      md5: 37bd4185e5b4ed3bb919748dea001203
-      size: 1998
+      md5: f2eafd867b4fba1e4ef78f66b477f980
+      size: 2233
     - path: src/getdata.py
       md5: 460975c2e88866a396ee550cd7a502e9
       size: 538

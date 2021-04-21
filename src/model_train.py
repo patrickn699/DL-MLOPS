@@ -1,5 +1,4 @@
 import numpy as np
-from keras.applications.resnet import ResNet50
 from keras_preprocessing.image import ImageDataGenerator
 from keras.layers import Dense,Input,Flatten
 from keras.models import Model

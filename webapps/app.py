@@ -43,7 +43,7 @@ def predict():
         bas_path = os.path.dirname(__file__)
         fil_path = os.path.join(bas_path,'uploads',secure_filename(fil.filename))
         
-        if not os.path.exists('uploads'):
+        if not os.path.exists('webapps/uploads'):
             os.mkdir('webapps/uploads')
         
         fil.save(fil_path)

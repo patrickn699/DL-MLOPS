@@ -1,5 +1,5 @@
 tensorflow==2.0.0
-h5py=2.10.0
+h5py==2.10.0
 Flask==1.1.1
 gunicorn
 Keras==2.3.0

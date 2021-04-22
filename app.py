@@ -21,7 +21,7 @@ template_dir = os.path.join(webapp_root, "templates")
 app = Flask(__name__,static_folder=static_dir,template_folder=template_dir)
 app.config['upimg'] = os.path.join('uploads')
 
-model1 = load_model("saved_models/trained.h5")
+model1 = load_model("trained.h5")
 
 def img_predict(pat,model):
     

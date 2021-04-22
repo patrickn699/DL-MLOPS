@@ -41,7 +41,7 @@ def predict():
     if request.method == 'POST':
         fil = request.files['file']
         bas_path = os.path.dirname(__file__)
-        fil_path = os.path.join('webapps','uploads',secure_filename(fil.filename))
+        fil_path = os.path.join(bas_path,'uploads',secure_filename(fil.filename))
         
         if not os.path.exists('uploads'):
             os.mkdir('webapps/uploads')

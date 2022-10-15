@@ -2,12 +2,12 @@ base:
   project: Deep Learning using MlOPS
 
 data_source:
-  data_src: Data_Set
+  data_src: ..\Data_Set
 
 load_data:
   num_classes: 3
-  raw_data: Data_Set
-  preprocessed_data: Data\preprocessed
+  raw_data: ..\Data_Set
+  preprocessed_data: ..\data\preprocessed
   full_p: \MlOPS-DeepLearning\Data_Set
 
 train_split:
@@ -16,8 +16,8 @@ train_split:
 model:
   name: VGG19
   trainable: False
-  train_path: Data\preprocessed\train
-  test_path: Data\preprocessed\test
+  train_path: data\preprocessed\train
+  test_path: data\preprocessed\test
   image_size: [225,225]
   loss: 'categorical_crossentropy'
   optimizer: 'adam' 

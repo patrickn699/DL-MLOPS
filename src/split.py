@@ -36,8 +36,8 @@ def create_fold(config,img = None):
         print('skipping it!')
 
     else:
-        os.mkdir(dirr+'/'+'train')
-        os.mkdir(dirr+'/'+'test')
+        os.mkdir(os.path.join(dirr,'train'))
+        os.mkdir(os.path.join(dirr,'test'))
         for i in range(cla):
             
             os.makedirs(os.path.join(dirr+'/'+'train','class_'+str(i)))
@@ -85,7 +85,7 @@ def train_test_split(config):
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
-    args.add_argument("--config", default = 'parameters.yaml')
+    args.add_argument("--config", default = '../parameters.yaml')
     passed_args = args.parse_args()
     
     create_fold(config=passed_args.config)
